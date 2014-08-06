@@ -12,7 +12,7 @@ my %cheat;
 sub new {
     my $class = shift;
     my $args = shift;
-    print Dumper \$args;
+    #print Dumper \$args;
     my $self;
 
     $self->{ 'kids' } = [];
@@ -21,7 +21,7 @@ sub new {
 
     bless $self, $class;
     $cheat{ $self->{ 'pid' } } = $self;
-    print Dumper \%cheat;
+    #print Dumper \%cheat;
 
     return $self;
 }
